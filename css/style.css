@@ -139,6 +139,8 @@ label__mobile-menu {
   height: 24px;
   margin: 0 28px 0 0;
   background-image: url('../img/header/icon_cart.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   outline: none;
   cursor: pointer;
   transition: opacity 300ms ease-out;
@@ -162,6 +164,7 @@ label__mobile-menu {
   height: 24px;
   background: transparent;
   background-image: url('../img/header/icon_search.png');
+  background-size: cover;
   background-repeat: no-repeat;
   outline: none;
   cursor: pointer;
@@ -1305,7 +1308,6 @@ label__mobile-menu {
     height: 18px;
     margin: 7px 20px 0 0;
     background-size: contain;
-    background-repeat: no-repeat;
   }
   .main-header-form {
     margin: 7px 0 0 0;
@@ -1316,7 +1318,6 @@ label__mobile-menu {
     width: 18px;
     height: 18px;
     background-size: contain;
-    background-repeat: no-repeat;
   }
   .main-header-search:focus {
     top: 85px;
