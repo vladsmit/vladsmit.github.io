@@ -210,7 +210,7 @@ body {
     height: 24px;
     margin: 0 28px 0 0;
     background-image: url('../img/header/icon_cart.png');
-    background-size: contain;
+    background-size: 18px 24px;
     background-repeat: no-repeat;
     outline: none;
     cursor: pointer;
@@ -237,7 +237,7 @@ body {
     height: 24px;
     background: transparent;
     background-image: url('../img/header/icon_search.png');
-    background-size: contain;
+    background-size: 24px 24px;
     background-repeat: no-repeat;
     outline: none;
     cursor: pointer;
@@ -1542,25 +1542,16 @@ body {
     .projects__btn-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 0 0 20px 0;
     }
     
     .projects__btn {
-        margin: 5px 15px; 
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-        &:nth-child(4) {
-            margin-left: 0;
-        }
+        margin-top: 10px; 
     }
     
     .projects__item {
         margin: 30px 0 0;
-        &:nth-child(4) {
-            margin-top: 0;
-        }
         &:nth-child(5) {
             margin-left: 0;
             margin-right: 0;
@@ -1634,22 +1625,12 @@ body {
     .statistic {
         width: 100%;
         flex-wrap: wrap;
-        justify-content: center;
-        .padding-set(30px 20px);
+        justify-content: space-around;
+        .padding-set(0 20px 30px);
     }
     
     .statistic__card {
-        margin: 0 10px 0 0;
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-        &:nth-child(4) {
-            margin-top: 30px;
-        }
-        &:nth-child(5) {
-            margin-top: 30px;
-            margin-right: 0;
-        }
+        margin-top: 30px;
     }
     
     .posts {
