@@ -139,7 +139,7 @@ label__mobile-menu {
   height: 24px;
   margin: 0 28px 0 0;
   background-image: url('../img/header/icon_cart.png');
-  background-size: contain;
+  background-size: 18px 24px;
   background-repeat: no-repeat;
   outline: none;
   cursor: pointer;
@@ -164,7 +164,7 @@ label__mobile-menu {
   height: 24px;
   background: transparent;
   background-image: url('../img/header/icon_search.png');
-  background-size: contain;
+  background-size: 24px 24px;
   background-repeat: no-repeat;
   outline: none;
   cursor: pointer;
@@ -1368,23 +1368,14 @@ label__mobile-menu {
   .projects__btn-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0 0 20px 0;
   }
   .projects__btn {
-    margin: 5px 15px;
-  }
-  .projects__btn:nth-child(3) {
-    margin-right: 0;
-  }
-  .projects__btn:nth-child(4) {
-    margin-left: 0;
+    margin-top: 10px;
   }
   .projects__item {
     margin: 30px 0 0;
-  }
-  .projects__item:nth-child(4) {
-    margin-top: 0;
   }
   .projects__item:nth-child(5) {
     margin-left: 0;
@@ -1452,22 +1443,12 @@ label__mobile-menu {
   .statistic {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     box-sizing: border-box;
-    padding: 30px 20px;
+    padding: 0 20px 30px;
   }
   .statistic__card {
-    margin: 0 10px 0 0;
-  }
-  .statistic__card:nth-child(3) {
-    margin-right: 0;
-  }
-  .statistic__card:nth-child(4) {
     margin-top: 30px;
-  }
-  .statistic__card:nth-child(5) {
-    margin-top: 30px;
-    margin-right: 0;
   }
   .posts {
     width: 100%;
