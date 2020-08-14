@@ -1226,19 +1226,22 @@ label__mobile-menu {
   }
   .main-header-nav-wrapper {
     margin: 0;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-areas: "logo logo logo logo . menu" ". . . . . menu" "cart search . . . menu";
+    grid-template-rows: 56px 16px 18px;
+    grid-template-columns: repeat(4, 44.5px) 1fr 40px;
   }
   .main-header-logo {
-    align-self: flex-start;
+    grid-row: 0.2;
+    grid-column: 0.33333333;
+    grid-area: logo;
   }
   .main-header-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    grid-row: 0.25;
+    grid-column: 0.85714286;
+    grid-area: menu;
     margin: 0;
-    width: 58%;
-    min-height: 65px;
+    width: 40px;
   }
   #mobile-menu {
     opacity: 0;
@@ -1269,7 +1272,7 @@ label__mobile-menu {
     display: block;
     position: absolute;
     width: 40px;
-    height: 4px;
+    height: 5px;
     border-radius: 10px;
     background-color: #fff;
     transition-duration: 0.25s;
@@ -1304,13 +1307,19 @@ label__mobile-menu {
     transition-duration: 0.25s;
   }
   .main-header-cart-btn {
+    grid-row: 0.75;
+    grid-column: 0.5;
+    grid-area: cart;
     width: 12px;
     height: 18px;
-    margin: 7px 20px 0 0;
+    margin: 0;
     background-size: contain;
   }
   .main-header-form {
-    margin: 7px 0 0 0;
+    grid-row: 0.75;
+    grid-column: 0.66666667;
+    grid-area: search;
+    margin: 0;
     width: 18px;
     height: 18px;
   }
@@ -1321,7 +1330,7 @@ label__mobile-menu {
   }
   .main-header-search:focus {
     top: 85px;
-    left: 53px;
+    left: 65px;
     width: 200px;
     height: 20px;
     padding: 0 20px 0 5px;
